@@ -1,0 +1,8 @@
+[26-Feb-2026 07:36:07 UTC] PHP Fatal error:  Uncaught Error: Class "core\task\adhoc_task" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/task/process_data_request_task.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/task/process_data_request_task.php on line 48
+[27-Feb-2026 08:51:29 UTC] PHP Fatal error:  Uncaught Error: Class "core\task\adhoc_task" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/task/process_data_request_task.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/task/process_data_request_task.php on line 48

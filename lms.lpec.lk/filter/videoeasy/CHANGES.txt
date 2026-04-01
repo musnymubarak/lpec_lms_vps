@@ -1,0 +1,104 @@
+Change List
+=========
+Version 1.2.09 (Build 2024100700)
+- Moodle 4.5 support
+
+Version 1.2.08(Build 2024040800)
+- Fixed issue where Youtube thumbnail image was not https https://github.com/justinhunt/moodle-filter_videoeasy/issues/6
+- Updated Youtubelightbox to use Fancybox and Fancybox HTML plugin
+- replaced old bundled jquery 1.12.4 with jquery 3.7.0 - for shimmed libraries
+
+Version 1.2.07 (Build 2023100600)
+- fixed js issue with jquery
+
+Version 1.2.06(Build 2019112100)
+-fixed bug where bad characters in extensions list blew up Moodle
+
+Version 1.2.05(Build 2019102500)
+-Added jquery ui to to templates by default, for resizable
+
+Version 1.2.04(Build 2018120500)
+-Fixed issue when directories in presets folder
+
+Version 1.2.03(Build 2018090300)
+-Fixed issue with spaces in custom extensions field
+
+Version 1.2.02(Build 2018081001)
+-added two new presets
+-fixerd buggy templates (elton audio, Flowplayer first frame, media element audio)
+
+Version 1.2.01(Build 2018041001)
+-Improved templates listing
+-Added template version update ability
+
+Version 1.2.0(Build 2018041000)
+-Implemented new Moodle Privacy API
+
+Version 2017081100
+-removed edit column from template table. Edit template by clicking on name
+
+Version 2017041000
+-fixed bug that would kill an install
+
+Version  2017032405
+-added better display of templates in navigation so that Boost doesn't completely mess it up
+-added revision flag for automating cache refresh courtesy of agrowe
+-fixed display of template names in dropdown
+-added an instruction/description field to each template
+-added version field for each template
+
+Version 2016120901
+-added support for "player" parameter to the URL so that the player can be specified via the 
+video url. e.g <a href="blah/blah.mp4?player=flowplayer">blah.mp4</a>
+
+Version 2016112801
+-fixed a bug where html from template processed but not sent to page, and js looking for it
+
+Version 2016111901
+-fixed a bug on webservice detection for mobile/alternate content
+-added 2 new presets, pdfinline and flowplayersubtitle and added crossorigin
+to videoeasytranscript
+
+Version 2016110902
+Fixed broken support for importing/exporting bundles containing "alternate content" fields
+
+Version 2016110901
+Added "alternate content" field for falling back to on mobile app
+
+Version 2016082006
+Added property FILENAMESTUB
+
+Version 2016082005
+Fixed a bug killing shim for uploaded js file
+
+Version 2016082004
+Fixed another problem on new installs where an error occurred adding a default template
+
+Version 2016082003
+Fixed another problem on new installs where an error occurred adding a default template
+
+Version 2016082002
+Fixed a problem on new installs where an error occurred adding a default template
+
+
+Version 2016082001
+Added shimming and loading of presets from bundle files in videoeasy dir. 
+Also removed the ablity to declare a jquery dependency. You should use shimming instead
+
+Version 2016011102
+Fixed bug where uploaded JS and CSS files would not be served correctly, and the filter would fail
+
+Version 2016011101
+Added support for preset bundles import/export
+Added RAWVIDEOURL and RAWPARAMS variables
+Changed handles of loaded dependencies from recjs[template number] e.g recjs1 , recjs2 etc to requirejs_[templatekey] e.g requiredjs_flowplayer
+
+Version 2015120401
+Added support for passing AMD params via HTML
+
+
+Version 2015032401
+Bug fix for < PHP5.5 users
+
+Version 2015032400
+First public release

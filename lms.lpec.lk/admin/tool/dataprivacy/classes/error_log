@@ -1,0 +1,12 @@
+[14-Oct-2025 17:06:03 UTC] PHP Fatal error:  Uncaught Error: Class "core\persistent" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/dataprivacy_contextlist.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/dataprivacy_contextlist.php on line 29
+[15-Oct-2025 13:03:20 UTC] PHP Fatal error:  Uncaught Error: Class "core\persistent" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/contextlist_context.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/contextlist_context.php on line 29
+[15-Oct-2025 15:45:09 UTC] PHP Fatal error:  Uncaught Error: Class "core\persistent" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/request_contextlist.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/request_contextlist.php on line 29

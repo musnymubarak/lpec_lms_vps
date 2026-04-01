@@ -1,0 +1,20 @@
+[14-Oct-2025 18:10:47 UTC] PHP Fatal error:  Uncaught Error: Class "advanced_testcase" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/user_deleted_observer_test.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/user_deleted_observer_test.php on line 28
+[14-Oct-2025 20:52:35 UTC] PHP Fatal error:  Uncaught Error: Class "advanced_testcase" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/expired_contexts_test.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/expired_contexts_test.php on line 26
+[14-Oct-2025 23:02:01 UTC] PHP Fatal error:  Uncaught Error: Class "advanced_testcase" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/filtered_userlist_test.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/filtered_userlist_test.php on line 26
+[15-Oct-2025 04:09:26 UTC] PHP Fatal error:  Uncaught Error: Class "advanced_testcase" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/metadata_registry_test.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/metadata_registry_test.php on line 26
+[15-Oct-2025 05:46:31 UTC] PHP Fatal error:  Uncaught Error: Class "advanced_testcase" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/api_test.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/api_test.php on line 34

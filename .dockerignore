@@ -1,0 +1,7 @@
+.git
+.env
+docker/initdb/*.sql
+docker/initdb/*.sql.gz
+docker/nginx-host
+*.md
+error_log

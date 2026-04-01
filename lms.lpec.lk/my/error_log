@@ -1,0 +1,5 @@
+[25-Feb-2026 06:31:27 UTC] PHP Warning:  unlink(/home/lpeclk/moodledata/cache/core_component.php): No such file or directory in /home/lpeclk/lms.lpec.lk/lib/classes/component.php on line 459
+[18-Mar-2026 06:29:39 UTC] PHP Warning:  unlink(/home/lpeclk/moodledata/cache/core_component.php): No such file or directory in /home/lpeclk/lms.lpec.lk/lib/classes/component.php on line 459
+[22-Mar-2026 14:21:52 UTC] PHP Warning:  unlink(/home/lpeclk/moodledata/cache/core_component.php): No such file or directory in /home/lpeclk/lms.lpec.lk/lib/classes/component.php on line 459
+[24-Mar-2026 19:05:04 Asia/Colombo] Cannot find session record 97r3rmepis7bufa40tfmh6asdh for user 7773, creating new session.
+[30-Mar-2026 12:48:18 Asia/Colombo] Cannot find session record spmup3hni9mos68g2kbk2hsvbg for user 7862, creating new session.

@@ -1,0 +1,73 @@
+services:
+  # ── Moodle Application (PHP-FPM + Nginx) ──
+  moodle:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: moodle-app
+    restart: unless-stopped
+    ports:
+      - "8004:80"
+    volumes:
+      # Persist moodledata (uploaded files, cache, sessions, etc.)
+      - moodledata:/var/www/moodledata
+      # Optional: mount config.php separately for easy editing
+      - ./docker/config.php:/var/www/html/config.php:ro
+    environment:
+      - MOODLE_DB_HOST=moodle-db
+      - MOODLE_DB_NAME=moodle
+      - MOODLE_DB_USER=moodle
+      - MOODLE_DB_PASS=${MOODLE_DB_PASSWORD:-SecurePassword123!}
+    depends_on:
+      moodle-db:
+        condition: service_healthy
+
+    networks:
+      - moodle-network
+
+  # ── MariaDB Database (dedicated for Moodle) ──
+  moodle-db:
+    image: mariadb:11.4
+    container_name: moodle-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:-RootSecurePass123!}
+      MARIADB_DATABASE: moodle
+      MARIADB_USER: moodle
+      MARIADB_PASSWORD: ${MOODLE_DB_PASSWORD:-SecurePassword123!}
+      MARIADB_CHARACTER_SET: utf8mb4
+      MARIADB_COLLATE: utf8mb4_general_ci
+    volumes:
+      - moodle-db-data:/var/lib/mysql
+      # Mount the DB dump for initial import
+      - ./docker/initdb:/docker-entrypoint-initdb.d
+    ports:
+      - "3307:3306"   # Expose on 3307 to avoid conflict with host MySQL on 3306
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    command: >
+      --innodb-buffer-pool-size=512M
+      --innodb-log-file-size=128M
+      --innodb-flush-log-at-trx-commit=2
+      --max-connections=200
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+    networks:
+      - moodle-network
+
+
+volumes:
+  moodledata:
+    name: moodle-data
+  moodle-db-data:
+    name: moodle-db-data
+
+
+networks:
+  moodle-network:
+    name: moodle-network
+    driver: bridge

@@ -1,0 +1,2 @@
+# Place your moodle database dump (.sql or .sql.gz) in this directory
+# MariaDB will automatically import it on first container start

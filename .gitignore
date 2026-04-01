@@ -1,0 +1,18 @@
+# Ignore local environment file containing passwords
+.env
+
+# Ignore huge database dumps to prevent GitHub rejection and data leaks
+docker/initdb/*.sql
+docker/initdb/*.sql.gz
+docker/initdb/*.zip
+docker/initdb/*.gz
+
+# Ignore local moodledata (cache, temp files, etc.)
+moodle-data/
+moodledata/
+docker/moodle-data/
+docker/moodledata/
+
+# OS specific files
+.DS_Store
+Thumbs.db

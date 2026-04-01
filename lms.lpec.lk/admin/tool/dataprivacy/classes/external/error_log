@@ -1,0 +1,12 @@
+[26-Feb-2026 13:44:17 UTC] PHP Fatal error:  Uncaught Error: Class "core_external\external_api" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/external/get_access_information.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/external/get_access_information.php on line 34
+[26-Feb-2026 22:06:58 UTC] PHP Fatal error:  Uncaught Error: Class "core_external\external_api" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/external/create_data_request.php:36
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/external/create_data_request.php on line 36
+[27-Feb-2026 00:54:08 UTC] PHP Fatal error:  Uncaught Error: Class "core_external\external_api" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/external/submit_selected_courses_form.php:41
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/external/submit_selected_courses_form.php on line 41

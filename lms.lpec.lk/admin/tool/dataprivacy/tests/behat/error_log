@@ -1,0 +1,6 @@
+[27-Feb-2026 04:34:18 UTC] PHP Warning:  Class "Facebook\WebDriver\WebDriverKeys" not found in /home/lpeclk/lms.lpec.lk/lib/behat/classes/behat_session_trait.php on line 44
+[27-Feb-2026 04:34:18 UTC] PHP Fatal error:  Uncaught Error: Class "Behat\MinkExtension\Context\RawMinkContext" not found in /home/lpeclk/lms.lpec.lk/lib/behat/behat_base.php:52
+Stack trace:
+#0 /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/tests/behat/behat_tool_dataprivacy.php(26): require_once()
+#1 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/lib/behat/behat_base.php on line 52

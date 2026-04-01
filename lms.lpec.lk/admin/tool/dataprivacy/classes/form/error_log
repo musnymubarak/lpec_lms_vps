@@ -1,0 +1,4 @@
+[26-Feb-2026 21:36:28 UTC] PHP Fatal error:  Uncaught Error: Class "core_form\dynamic_form" not found in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/form/contactdpo.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/lpeclk/lms.lpec.lk/admin/tool/dataprivacy/classes/form/contactdpo.php on line 35
