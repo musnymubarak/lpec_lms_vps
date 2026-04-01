@@ -4,9 +4,9 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = 'mariadb';
+$CFG->dbtype    = 'mysqli';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'moodle-db';           // Docker service name
+$CFG->dbhost    = 'host.docker.internal';           // Route to Host MySQL
 $CFG->dbname    = 'moodle';
 $CFG->dbuser    = 'moodle';
 $CFG->dbpass    = getenv('MOODLE_DB_PASS') ?: 'SecurePassword123!';
